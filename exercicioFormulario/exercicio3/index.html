@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <h2>Formulário de Contato</h2>
+    <form id="contactForm" action="enviar.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required aria-label="Nome"><br><br>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required aria-label="E-mail"><br><br>
+        
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" required aria-label="Assunto"><br><br>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required aria-label="Mensagem"></textarea><br><br>
+        
+        <input type="submit" value="Enviar" aria-label="Enviar Formulário">
+    </form>
+
+    <script src="validacao.js"></script>
+</body>
+</html>
